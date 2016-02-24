@@ -1,0 +1,29 @@
+{
+  "name": "cslide",
+  "version": "1.0.0",
+  "description": ">A slide plugin for scene project.",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node ./bin/start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alafe/cslide.git"
+  },
+  "keywords": [
+    "slide"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alafe/cslide/issues"
+  },
+  "homepage": "https://github.com/alafe/cslide#readme"
+}

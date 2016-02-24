@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+var path = require('path');
+var fs = require('fs');
+var http = require('http');
+
+function staticPro(p) {
+    return function (req, res, next) {
+        fs.readFile(p + '/' + req.url,'utf8', function (err, data) {
+            if (err) {
+                res.statusCode = 404;
+            }
+            else {
+                res.write(data);
+            }
+            res.end();
+        });
+    };
+}
+
+http.createServer(staticPro(path.join(__dirname, '..'))).listen(6608);
+
